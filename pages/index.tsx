@@ -17,6 +17,8 @@ export default function Home() {
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
+        <img src="/lazar.png" alt="Lazar Nikolov" />
+
         <p className={styles.description}>
           Get started by editing <code>pages/index.tsx</code>
         </p>
