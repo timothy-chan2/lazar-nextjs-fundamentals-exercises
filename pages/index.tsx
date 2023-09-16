@@ -2,6 +2,9 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 
 import Link from 'next/link'
+import Image from 'next/image'
+
+import photo from '../public/lazar.png'
 
 export default function Home() {
   return (
@@ -17,7 +20,8 @@ export default function Home() {
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
-        <img src="/lazar.png" alt="Lazar Nikolov" />
+        {/* Optimized static image */}
+        <Image src={photo} alt="Lazar Nikolov" priority />
 
         <p className={styles.description}>
           Get started by editing <code>pages/index.tsx</code>
