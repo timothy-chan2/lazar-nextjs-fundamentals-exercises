@@ -18,6 +18,7 @@ export default function Home() {
 
       <main>
         <Link href="/about">About</Link>
+        <div style={{ display: 'flex', backgroundColor: '#0070f3', width: 600, height: 2, marginTop: 15 }}></div>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
