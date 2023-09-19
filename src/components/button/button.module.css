@@ -1,0 +1,14 @@
+.correct {
+  color: white;
+  background-color: green;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 25px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.correct:hover {
+  background-color: forestgreen;
+}

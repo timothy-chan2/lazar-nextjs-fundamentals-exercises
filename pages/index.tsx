@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 import photo from '../public/lazar.png'
+import Button from '../src/components/button/button';
 
 export default function Home() {
   return (
@@ -18,7 +19,9 @@ export default function Home() {
 
       <main>
         <Link href="/about">About</Link>
-        <div style={{ display: 'flex', backgroundColor: '#0070f3', width: 600, height: 2, marginTop: 15 }}></div>
+        <div style={{ display: 'flex' }}>
+          <Button />
+        </div>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
