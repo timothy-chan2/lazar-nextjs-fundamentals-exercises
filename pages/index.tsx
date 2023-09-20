@@ -5,7 +5,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 import photo from '../public/lazar.png'
+
 import Button from '../src/components/button/button';
+import Footer from '../src/components/footer/footer';
 
 export default function Home() {
   return (
@@ -64,16 +66,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
-        </a>
-      </footer>
+      <Footer />
 
       <style jsx>{`
         main {
@@ -83,24 +76,6 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-        }
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        footer img {
-          margin-left: 0.5rem;
-        }
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-decoration: none;
-          color: inherit;
         }
         code {
           background: #fafafa;
