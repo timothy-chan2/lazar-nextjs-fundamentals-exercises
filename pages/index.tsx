@@ -7,7 +7,6 @@ import Image from 'next/image'
 import photo from '../public/lazar.png'
 
 import Button from '../src/components/button/button';
-import Footer from '../src/components/footer/footer';
 
 export default function Home() {
   return (
@@ -65,8 +64,6 @@ export default function Home() {
           </a>
         </div>
       </main>
-
-      <Footer />
 
       <style jsx>{`
         main {
