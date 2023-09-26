@@ -20,6 +20,7 @@ export default function Home() {
 
       <main>
         <Link href="/about">About</Link>
+        <Link href="/genres">Genre List</Link>
         <div style={{ display: 'flex' }}>
           <Button />
         </div>

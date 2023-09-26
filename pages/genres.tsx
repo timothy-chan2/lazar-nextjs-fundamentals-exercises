@@ -1,4 +1,5 @@
 import type { GetStaticProps } from 'next'
+import Link from 'next/link'
 
 import { List, ListItem, Container, Heading } from '@chakra-ui/react'
 
@@ -9,6 +10,7 @@ type Props = {
 const Genres = ({ genres }: Props) => {
   return (
     <Container maxW="container.xl" pt={10}>
+      <Link href="/">Home</Link>
       <Heading mb={4}>Genres:</Heading>
       <List>
         {genres.map((genre) => (
