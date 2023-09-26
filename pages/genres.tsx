@@ -19,8 +19,13 @@ const Genres = ({ genres }: Props) => {
   )
 }
 
-export const getStaticProps: GetStaticProps<Props> = (context) => {
-  const genres = [ "rock", "country", "pop" ]
+import { promises as fs } from 'fs'
+import path from 'path'
+export const getStaticProps: GetStaticProps<Props> = async (context) => {
+  const filePath = path.join(process.cwd(), 'genreList.json')
+  const jsonData = await fs.readFile(filePath, 'utf8')
+  const objectData = JSON.parse(jsonData)
+  const genres: string[] = Object.values(objectData)
 
   const props: Props = {
     genres
